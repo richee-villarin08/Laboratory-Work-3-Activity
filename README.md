@@ -17,7 +17,8 @@ Students must answer the following:
 ○ Why do we split data into training and validation sets?
  	>The training set is used to teach the model. The validation set acts as a "practice test" using data the model hasn't seen during training. This helps us monitor if the model is actually learning general patterns or just memorizing the training images.
 3. Performance Analysis 
-○ What accuracy did your model achieve?
+ 
+ ○ What accuracy did your model achieve?
 	>
 ○ How did the number of images affect the model’s performance? 
 	>Deep learning is data-hungry. A larger number of images (like the 250+ requested) provides more variations of each plant (different lighting, angles, etc.), which helps the model build a more robust mathematical representation of the class.
