@@ -21,12 +21,12 @@ Students must answer the following:
 	>
 ○ How did the number of images affect the model’s performance? 
 	>Deep learning is data-hungry. A larger number of images (like the 250+ requested) provides more variations of each plant (different lighting, angles, etc.), which helps the model build a more robust mathematical representation of the class.
-4. Critical Thinking 
+4. Critical Thinking
 ○ What challenges did you encounter while using your own dataset? 
 	>Common challenges include class imbalance (some folders having fewer images), noisy data (blurry or irrelevant images), and the slow upload speed to Google Drive for large datasets.
 ○ How can data augmentation improve your model? 
 	>
-5. Application 
+4. Application 
 ○ Suggest a real-world application for your trained model. 
 	>
 ○ How can this system be integrated into a mobile or web application? 
