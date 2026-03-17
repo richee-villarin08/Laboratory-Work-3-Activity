@@ -41,17 +41,17 @@ Students must answer the following:
 
 ○ How can data augmentation improve your model? 
 	
-	>
+	>This technique artificially expands your dataset by flipping, rotating, or zooming into existing images. It forces the model to be less "picky" and prevents it from focusing on irrelevant details like the orientation of an object.
 
-4. Application 
+5. Application 
 
 ○ Suggest a real-world application for your trained model. 
 	
-	>
+	>This model could be used for quality control in manufacturing (detecting defective parts) or a mobile app for plant identification to help gardeners identify pests.
 
 ○ How can this system be integrated into a mobile or web application? 
 	
-	>
+	> Web: Use TensorFlow.js to run the model directly in a browser or host it as an API (using Flask or FastAPI) that a website calls to get predictions.
 
 #Guide Questions (Student Explanation & Reflection) Students must answer: 
 
