@@ -62,17 +62,34 @@ Students must answer the following:
 
 1. What signs indicated overfitting in your first model? 
 
+	>In the first model, the clearest sign of overfitting was a significant divergence between the training and validation curves. While the training accuracy continued to climb toward 100%, the validation accuracy typically plateaued or even began to decrease. This was mirrored in the loss plots, where the validation loss began to rise even as the training loss dropped, indicating that the model was memorizing the specific noise of the training data rather than learning general patterns.
+
 2. How did data augmentation affect validation accuracy? 
+
+	>Data augmentation typically increases validation accuracy and narrows the gap between training and validation performance. By showing the model modified versions of the same image (flipped, rotated, zoomed), the model can no longer memorize specific pixel coordinates. This forces it to learn the actual "features" (like shapes or colors) of the object, leading to better performance on new, unseen data.
 
 ##Model Improvement 
 
 3. What is the purpose of dropout layers? 
+
+	>The purpose of Dropout is to prevent co-adaptation of neurons. During training, it randomly "turns off" a fraction of neurons (in your code, 30% or $0.3$). This forces the network to find multiple independent pathways to solve the problem rather than relying on a few specific "expert" neurons. It acts as a form of regularization that prevents the model from becoming too complex and memorizing noise.
+
 4. Why does data augmentation improve generalization? 
+
+	>It improves generalization by artificially expanding the size and diversity of the training set. In the real world, an object won't always be perfectly centered or upright. By simulating these variations during training, the model becomes "invariant" to those changes, meaning it can recognize a cat whether it's facing left, right, or is slightly tilted.
 ##Performance Comparison 
 
 5. Compare accuracy before and after improvements. 
+
+	>Before the improvements, the model likely exhibited high training accuracy but significantly lower validation accuracy, which is a classic sign of an overfit model. After implementing data augmentation and dropout, the training accuracy might rise more slowly or stay slightly lower, but the validation accuracy improves and tracks much more closely with the training results. This result indicates a model that is more balanced and reliable for real-world use.
+
 6. Which technique contributed most to improvement? 
 
+	>This often depends on the dataset, but Data Augmentation usually provides the biggest boost for image classification. It addresses the root cause of overfitting (lack of data variety), whereas Dropout acts as a secondary safety net to keep the internal weights of the model in check.
 ##Deployment & Application 
 7. Why is saving the model important? 
+
+	>Saving the trained model is essential because the training process is computationally intensive and time-consuming. By using the model.save function, you can preserve the learned weights and reuse them instantly for future predictions without needing the original training data or a powerful GPU. This also ensures portability, allowing the classifier to be moved from a development environment to a production server or a mobile device.
+
 8. How can this model be deployed in a real-world system?
+	>A saved model can be integrated into various real-world systems, such as web applications that use an API to classify images uploaded by users. It can also be converted for use in mobile apps via TensorFlow Lite for real-time camera recognition or implemented in industrial automation systems. In a factory setting, for example, the model could be used to automatically identify and sort products on a conveyor belt using a high-speed camera feed.
