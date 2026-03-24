@@ -4,6 +4,9 @@
 [#Laboratory Work 3 Activity](https://colab.research.google.com/drive/1PO6qKMWidP6CUo5DVqxbL0wDe0F5wZFJ?usp=sharing)
 
 
+[#Laboratory Work 3 Activity Colab](https://colab.research.google.com/drive/1PO6qKMWidP6CUo5DVqxbL0wDe0F5wZFJ?usp=drive_link).
+
+
 ## Guide Questions (Student Reflection & Explanation) 
 Students must answer the following: 
 1. Dataset Preparation 
